@@ -3,34 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tableau Portfolio</title>
+    <title>Data Analytics Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #333; border-bottom: 2px solid #333; padding-bottom: 10px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
-        .card h2 { margin-top: 0; font-size: 1.3rem; }
-        .btn { display: inline-block; background: #0076a3; color: white; padding: 8px 15px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 10px; }
+        body { font-family: Arial, sans-serif; max-width: 1000px; margin: 0 auto; padding: 20px; line-height: 1.6; background-color: #f4f6f9; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #34495e; padding-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; margin-top: 30px; }
+        .card { background: white; border: 1px solid #e1e8ed; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; }
+        .card h2 { margin-top: 0; font-size: 1.4rem; color: #2c3e50; }
+        .tag { display: inline-block; background: #e0e6ed; color: #555; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; align-self: flex-start; }
+        .tag.exec { background: #d4edda; color: #155724; }
+        .tag.tech { background: #cce5ff; color: #004085; }
+        .btn { display: inline-block; background: #0076a3; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 15px; text-align: center; }
         .btn:hover { background: #005577; }
     </style>
 </head>
 <body>
     <h1>Data Analytics & Tableau Portfolio</h1>
-    <p>Welcome! Select a project below to view the interactive dashboard hosted live.</p>
+    <p>Welcome! Explore my interactive data visualizations built to drive executive decisions and technical insights.</p>
     
     <div class="grid">
-        <!-- Dashboard Card 1 -->
+        <!-- Dashboard 1 -->
         <div class="card">
-            <h2>Sales Performance Tracker</h2>
-            <p>An interactive deep-dive into regional sales trends and profit margins.</p>
-            <a href="sales-viz.html" class="btn">View Live Dashboard</a>
+            <div>
+                <span class="tag exec">Executive</span>
+                <h2>Migraine & Sinusitis Executive Viz</h2>
+                <p>High-level strategic analysis tracking health trends, symptom correlations, and patient demographic impacts.</p>
+            </div>
+            <a href="migraine-sinusitis.html" class="btn">View Dashboard</a>
         </div>
 
-        <!-- Dashboard Card 2 -->
+        <!-- Dashboard 2 -->
         <div class="card">
-            <h2>Marketing ROI Analysis</h2>
-            <p>Evaluation of ad-spend performance across digital acquisition channels.</p>
-            <a href="marketing-viz.html" class="btn">View Live Dashboard</a>
+            <div>
+                <span class="tag exec">Executive</span>
+                <h2>Electricity Business Executive Viz</h2>
+                <p>Corporate financial and operational overview monitoring consumption patterns, revenue metrics, and grid efficiency.</p>
+            </div>
+            <a href="electricity-business.html" class="btn">View Dashboard</a>
+        </div>
+
+        <!-- Dashboard 3 -->
+        <div class="card">
+            <div>
+                <span class="tag tech">Technical</span>
+                <h2>AQI (Air Quality Index) Technical Viz</h2>
+                <p>Deep-dive environmental analysis evaluating granular atmospheric pollutant tracking and environmental metrics.</p>
+            </div>
+            <a href="aqi-technical.html" class="btn">View Dashboard</a>
+        </div>
+
+        <!-- Dashboard 4 -->
+        <div class="card">
+            <div>
+                <span class="tag">Non-Technical</span>
+                <h2>Product Performance Analysis</h2>
+                <p>User-friendly breakdown of product lifecycles, customer satisfaction metrics, and standard commercial performance indicators.</p>
+            </div>
+            <a href="product-analysis.html" class="btn">View Dashboard</a>
         </div>
     </div>
 </body>
